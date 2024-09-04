@@ -19,4 +19,9 @@ public class UserController {
         String page = this.userService.handleHelloWorld();
         return "hello";
     }
+
+    @RequestMapping("/admin/user")
+    public String getCreateAdminPage() {
+        return "admin/user/create";
+    }
 }
